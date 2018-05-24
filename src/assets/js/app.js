@@ -23,4 +23,5 @@ $("#time-start")
   });
   $('#fullpage').fullpage({
     css3: true,
+    scrollOverflow: true,
   });
