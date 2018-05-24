@@ -19,17 +19,67 @@ html,body{
   bottom:0;
   right:0;
   position: absolute;
-  background-position: center;
-  background-size: cover;
-  background-color: #030914;
-  background-image: url('/assets/img/star.jpg');
-}
-.title{
-  color:#FFF;
+  background: #030914 url('/assets/img/star.jpg') no-repeat;
+  background-size: 100% auto;
   text-align: center;
-}
-.timer{
   color:#FFF;
+  .one-section{
+    position: absolute;
+    left:0;
+    bottom: 47%;
+    right:0;
+    .title{
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    .tips{
+      line-height: 24px;
+      font-size: 14px;
+    }
+    .timer{
+      overflow: hidden;
+      span{
+        background: rgba(255,255,255,0.2);
+        display: inline-block;
+        width: 36px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        margin: 0 5px;
+        border-radius: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  
+}
+#second-section{
+  background-color: #020A15;
+  color: #FFF;
+  text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding:24px;
+  .content{
+    max-width: 800px;
+    width:100%;
+    margin: auto;
+    display: flex;
+  }
+  .item{
+    flex:1;
+    padding: 24px;
+  }
+  .team-info{
+    background: #0F0F0F;
+    margin:48px;
+  }
+}
+
+#third-section{
+  background: #030914 url('/assets/img/star.jpg') no-repeat;  
+  background-size: 100% auto;
+  height: 800px;
+  transform: rotate(180deg);
 }

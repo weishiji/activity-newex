@@ -17,11 +17,20 @@ line();
 
 $("#time-start")
   .countdown("2018/06/15", function(event) {
-    $(this).text(
-      event.strftime('%D days %H:%M:%S')
+    $(this).html(
+      //event.strftime('%D %H:%M:%S')
+      event.strftime(''
+                + '<span>%D</span> :'
+                + '<span>%H</span> :'
+                + '<span>%M</span> :'
+                + '<span>%S</span>'
+                )
     );
   });
   $('#fullpage').fullpage({
     css3: true,
     scrollOverflow: true,
+    autoScrolling: false,
+    fitToSection: false,
+    verticalCentered: false,
   });
