@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 import './lib//jQuery.countdown.min';
+import './lib/jquery.fullPage';
 
 window.$ = $;
 
@@ -19,4 +20,7 @@ $("#time-start")
     $(this).text(
       event.strftime('%D days %H:%M:%S')
     );
+  });
+  $('#fullpage').fullpage({
+    css3: true,
   });
