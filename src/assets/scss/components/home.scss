@@ -9,9 +9,29 @@ html,body{
   position: relative;
 }
 #particles-js{
-  position: relative;
-  background-repeat: no-repeat;
   z-index: 99;
+  position: absolute;
+  width:100%;
+  height: 60%;
+}
+.star-image{
+  width:100%;
+  max-width: 1920px;
+  height: auto;
+}
+.timer{
+  overflow: hidden;
+  span{
+    background: rgba(255,255,255,0.2);
+    display: inline-block;
+    width: 36px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
 }
 .line-content{
   top:0;
@@ -19,43 +39,30 @@ html,body{
   bottom:0;
   right:0;
   position: absolute;
-  background: #030914 url('/assets/img/star.jpg') no-repeat;
-  background-size: 100% auto;
   text-align: center;
   color:#FFF;
+
   .one-section{
     position: absolute;
     left:0;
-    bottom: 47%;
+    top: 15%;
     right:0;
-    .title{
-      font-size: 24px;
+    .company{
+      font-size: 2.4em;
+      margin-bottom: 2rem;
       font-weight: bold;
-      line-height: 30px;
+    } 
+    .title{
+      font-size: 1.4em;
+      font-weight: bold;
     }
     .tips{
-      line-height: 24px;
       font-size: 14px;
     }
-    .timer{
-      overflow: hidden;
-      span{
-        background: rgba(255,255,255,0.2);
-        display: inline-block;
-        width: 36px;
-        height: 80px;
-        text-align: center;
-        line-height: 80px;
-        margin: 0 5px;
-        border-radius: 10px;
-        font-size: 14px;
-      }
-    }
   }
-  
 }
 #second-section{
-  background-color: #020A15;
+  background-color: #000;
   color: #FFF;
   text-align: center;
   display: flex;
@@ -70,6 +77,10 @@ html,body{
   .item{
     flex:1;
     padding: 24px;
+    font-size: 0.8em;
+    p{
+      color:#5E5E5E;
+    }
   }
   .team-info{
     background: #0F0F0F;
@@ -78,8 +89,25 @@ html,body{
 }
 
 #third-section{
-  background: #030914 url('/assets/img/star.jpg') no-repeat;  
-  background-size: 100% auto;
-  height: 800px;
-  transform: rotate(180deg);
+  top:-1px;
+  .reversion{
+    transform: rotate(180deg);
+  }
+  .footer-countdown{
+    position: absolute;
+    color:#FFF;
+    z-index: 99;
+    top:0;
+    left:50%;
+    margin-left: -105px;
+  }
+  .footer{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    z-index: 99;
+    color:#FFF;
+    padding:8px;
+  }
 }
