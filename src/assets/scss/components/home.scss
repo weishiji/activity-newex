@@ -79,6 +79,11 @@ ul{
     }
   }
 }
+@media screen and (max-width: 1200px) {
+  .line-content .one-section{
+    top:0;
+  }
+}
 #second-section{
   background-color: #000;
   color: #FFF;
