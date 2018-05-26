@@ -5,8 +5,26 @@ html,body{
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
+ul{
+  list-style-type: none;
+  margin: 0;
+}
 .relative{
   position: relative;
+}
+.en-title{
+  color: #006CA4;
+}
+.content{
+  max-width: 800px;
+  width:100%;
+  margin: auto;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .content{
+    flex-direction:column;
+  }
 }
 #particles-js{
   z-index: 99;
@@ -68,12 +86,7 @@ html,body{
   display: flex;
   flex-direction: column;
   padding:24px;
-  .content{
-    max-width: 800px;
-    width:100%;
-    margin: auto;
-    display: flex;
-  }
+  
   .item{
     flex:1;
     padding: 24px;
@@ -101,6 +114,16 @@ html,body{
     left:50%;
     margin-left: -105px;
   }
+  .coming{
+    display: flex;
+    width:210px;
+    justify-content: space-between;
+    span{
+      flex:1;
+      text-align: center;
+      padding:24px 0;
+    }
+  }
   .footer{
     position: absolute;
     bottom: 0;
@@ -109,5 +132,13 @@ html,body{
     z-index: 99;
     color:#FFF;
     padding:8px;
+    background: rgba($color: #000000, $alpha: .5);
+    padding:24px;
+  }
+  .footer-title{
+    color:#4F5254;
+  }
+  .footer-item{
+    flex:1;
   }
 }
