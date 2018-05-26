@@ -1,13 +1,34 @@
+<script type="text/template" id="main-example-template">
+<div class="time <%= label %>">
+  <span class="count curr top">
+    <%= curr %>
+  </span>
+  <span class="count next top">
+    <%= next %>
+  </span>
+  <span class="count next bottom">
+    <%= next %>
+  </span>
+  <span class="count curr bottom">
+    <%= curr %>
+  </span>
+  <span class="label">
+    <%= label.length < 6 ? label : label.substr(0, 3)  %>
+  </span>
+</div>
+</script>
+
 <div id="fullpage">
   <div class="section relative">
     <div id="particles-js"></div>
     <img class="star-image" src="/assets/img/star.jpg" alt="star">
     <div class="line-content">
-      <div class="one-section">
+      <div class="one-section main-example">
         <h3 class="company">COINTOBE</h3>
         <h3 class="title">数字资产交易全平台</h3>
         <p class="tips">kan bu qing chu wen an shi shen me ya !!!</p>
-        <div id="time-start" class="timer"></div>
+        <!-- <div id="main-example" class="countdown-container"></div> -->
+        <div id="main-example" class="timer"></div>
       </div>
     </div>
   </div>
