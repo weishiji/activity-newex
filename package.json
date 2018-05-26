@@ -5,7 +5,8 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "upload": "scp -r dist/ root@45.77.60.78:/var/www/html/"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
