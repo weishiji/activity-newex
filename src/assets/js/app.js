@@ -84,10 +84,11 @@ resizeImage();
 //   }
 // });
 
+const countdonwTime = "2018/06/20";
+
 $("#main-example")
-  .countdown("2018/06/15", function(event) {
+  .countdown(countdonwTime, function(event) {
     $(this).html(
-      //event.strftime('%D %H:%M:%S')
       event.strftime(''
                 + '<span>%D</span><strong>:</strong>'
                 + '<span>%H</span><strong>:</strong>'
@@ -96,7 +97,7 @@ $("#main-example")
                 )
     );
   });
-  $('#footer-time').countdown("2018/06/15", function(event) {
+  $('#footer-time').countdown(countdonwTime, function(event) {
     $(this).html(
       event.strftime(''
                 + '<span>%D</span><strong>:</strong>'
