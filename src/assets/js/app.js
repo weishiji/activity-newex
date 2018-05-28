@@ -86,25 +86,21 @@ resizeImage();
 
 const countdonwTime = "2018/06/20";
 
+const $html = ''
++ '<span><bold class="value"> %D </bold><bold class="label">D</bold></span><strong>:</strong>'
++ '<span><bold class="value"> %H </bold> <bold class="label">H</bold></span><strong>:</strong>'
++ '<span><bold class="value"> %M </bold> <bold class="label">M</bold></span><strong>:</strong>'
++ '<span><bold class="value"> %S </bold> <bold class="label">S</bold></span>';
+
 $("#main-example")
   .countdown(countdonwTime, function(event) {
     $(this).html(
-      event.strftime(''
-                + '<span>%D</span><strong>:</strong>'
-                + '<span>%H</span><strong>:</strong>'
-                + '<span>%M</span><strong>:</strong>'
-                + '<span>%S</span>'
-                )
+      event.strftime($html)
     );
   });
   $('#footer-time').countdown(countdonwTime, function(event) {
     $(this).html(
-      event.strftime(''
-                + '<span>%D</span><strong>:</strong>'
-                + '<span>%H</span><strong>:</strong>'
-                + '<span>%M</span><strong>:</strong>'
-                + '<span>%S</span>'
-                )
+      event.strftime($html)
     );
   });
 
