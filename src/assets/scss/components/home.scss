@@ -21,6 +21,14 @@ ul{
   margin: auto;
   display: flex;
 }
+#fullpage{
+  overflow-x: hidden;
+  background: black;
+  .top-image{
+    min-width: 1920px;
+    position: relative;
+  }
+}
 @media screen and (max-width: 600px) {
   .content{
     flex-direction:column;
@@ -36,19 +44,22 @@ ul{
   width:100%;
   max-width: 1920px;
   height: auto;
+  visibility: hidden;
+  margin: auto;
 }
 .timer{
   overflow: hidden;
   span{
     background: rgba(255,255,255,0.2);
     display: inline-block;
-    width: 36px;
-    height: 80px;
+    width: 40px;
+    height: 60px;
     text-align: center;
-    line-height: 80px;
+    line-height: 60px;
     margin: 0 5px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 1.2em;
+    font-weight: 800;
   }
 }
 .line-content{
@@ -59,7 +70,12 @@ ul{
   position: absolute;
   text-align: center;
   color:#FFF;
-
+  .coming{
+    font-size: 0.8em;
+    letter-spacing: 1em;
+    color:#DEDEE0;
+    margin-bottom: 2rem;
+  }
   .one-section{
     position: absolute;
     left:0;
@@ -67,7 +83,6 @@ ul{
     right:0;
     .company{
       font-size: 2.4em;
-      margin-bottom: 2rem;
       font-weight: bold;
     } 
     .title{
@@ -79,11 +94,17 @@ ul{
     }
   }
 }
-@media screen and (max-width: 1200px) {
-  .line-content .one-section{
-    top:0;
-  }
-}
+// @media screen and (max-width: 1200px) {
+//   .line-content .one-section{
+//     top:0;
+//   }
+// }
+// @media screen and (max-width: 1280px) {
+//   .line-content .one-section{
+//     top:8%;
+//   }
+// }
+
 #second-section{
   background-color: #000;
   color: #FFF;
@@ -108,8 +129,11 @@ ul{
 
 #third-section{
   top:-1px;
+  overflow-x:hidden;
   .reversion{
     transform: rotate(180deg);
+    width:1920px;
+    position: relative;
   }
   .footer-countdown{
     position: absolute;
@@ -121,7 +145,7 @@ ul{
   }
   .coming{
     display: flex;
-    width:210px;
+    width:240px;
     justify-content: space-between;
     span{
       flex:1;
@@ -131,19 +155,23 @@ ul{
   }
   .footer{
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     left:0;
     width:100%;
     z-index: 99;
     color:#FFF;
     padding:8px;
-    background: rgba($color: #000000, $alpha: .5);
-    padding:24px;
+    // background: rgba($color: #000000, $alpha: .5);
+    padding:60px;
   }
   .footer-title{
     color:#4F5254;
   }
   .footer-item{
     flex:1;
+  }
+  .homepage-link{
+    text-align: center;
+    color:#898A8E;
   }
 }

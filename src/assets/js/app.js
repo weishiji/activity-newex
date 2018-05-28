@@ -11,7 +11,15 @@ import line from './line';
 
 line();
 $(document).foundation();
-
+const resizeImage = () => {
+  $('.star-image')
+    .css('left', ($(window).width() - 1920) / 2)
+    .css('visibility', 'visible');
+}
+$(window).resize(() => {
+  resizeImage();
+})
+resizeImage();
 // var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
 //   nextYear = '2018/06/15',
 //   template = _.template($('#main-example-template').html()),
