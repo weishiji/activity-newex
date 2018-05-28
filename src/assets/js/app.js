@@ -88,9 +88,9 @@ $("#main-example")
     $(this).html(
       //event.strftime('%D %H:%M:%S')
       event.strftime(''
-                + '<span>%D</span> :'
-                + '<span>%H</span> :'
-                + '<span>%M</span> :'
+                + '<span>%D</span><strong>:</strong>'
+                + '<span>%H</span><strong>:</strong>'
+                + '<span>%M</span><strong>:</strong>'
                 + '<span>%S</span>'
                 )
     );
@@ -98,9 +98,9 @@ $("#main-example")
   $('#footer-time').countdown("2018/06/15", function(event) {
     $(this).html(
       event.strftime(''
-                + '<span>%D</span> :'
-                + '<span>%H</span> :'
-                + '<span>%M</span> :'
+                + '<span>%D</span><strong>:</strong>'
+                + '<span>%H</span><strong>:</strong>'
+                + '<span>%M</span><strong>:</strong>'
                 + '<span>%S</span>'
                 )
     );
