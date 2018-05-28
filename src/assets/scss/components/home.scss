@@ -16,17 +16,21 @@ ul{
   color: #006CA4;
 }
 .content{
-  max-width: 800px;
+  max-width: 1200px;
   width:100%;
   margin: auto;
+  display: flex;
+}
+.section{
   display: flex;
 }
 #fullpage{
   overflow-x: hidden;
   background: black;
   .top-image{
-    min-width: 1920px;
+    min-width: 1800px;
     position: relative;
+    margin: auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -41,14 +45,15 @@ ul{
   height: 60%;
 }
 .star-image{
-  width:100%;
-  max-width: 1920px;
+  max-width: 1800px;
   height: auto;
   visibility: hidden;
   margin: auto;
 }
 .timer{
   overflow: hidden;
+  margin-top: 60px;
+  margin-bottom: 30px;
   span{
     background: rgba(255,255,255,0.1);
     display: inline-block;
@@ -60,6 +65,7 @@ ul{
     border-radius: 15px;
     font-size: 48px;
     font-weight: 800;
+    font-family: DIN Alternate,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif;
   }
   strong{
     font-size: 36px;
@@ -75,9 +81,9 @@ ul{
   color:#FFF;
   .coming-zh {
     display: flex;
-    width: 320px;
+    width: 350px;
     height: 36px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: PingFangSC-Light;
     color: rgba(255, 255, 255, 1);
     line-height: 36px;
@@ -105,7 +111,7 @@ ul{
       margin: auto;
       width:545px;
       height:36px;
-      font-size:20px;
+      font-size:18px;
       font-family:PingFangSC-Light;
       color:rgba(255, 255, 255, 1);
       line-height:36px;
@@ -129,11 +135,13 @@ ul{
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding:24px;
-  
+  .content{
+    position: relative;
+    top:-300px;
+  }
   .item{
     flex:1;
-    padding: 24px;
+    padding: 40px;
     font-size: 0.8em;
     p{
       color:#5E5E5E;
@@ -143,11 +151,30 @@ ul{
     background: #0F0F0F;
     margin:48px;
   }
+  .small-content{
+    max-width:800px;
+  }
+  .logo-alpha{
+    margin-bottom: 12px;
+  }
+  .team{
+    margin-bottom: 40px;
+  }
+  .team-content{
+    padding:0 60px;
+  }
+  @media screen and (max-width: 800px) {
+    .team-content{
+      padding:0;
+    }
+  }
 }
-
 #third-section{
-  top:-1px;
+  top:-300px;
+  background-color: #000;
   overflow-x:hidden;
+  height: 700px;;
+  overflow-y: hidden;
   .reversion{
     transform: rotate(180deg);
     width:1920px;
@@ -159,28 +186,30 @@ ul{
     z-index: 99;
     top:0;
     left:50%;
-    margin-left: -105px;
+    margin-left: -165px;
   }
   .coming{
     display: flex;
     width:330px;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
     span{
-      flex:1;
       text-align: center;
       padding:24px 0;
+      width:70px;
+      color:rgba($color: #FFF, $alpha: .5);
     }
   }
   .footer{
     position: absolute;
-    bottom: 20%;
+    bottom: 0;
     left:0;
     width:100%;
     z-index: 99;
     color:#FFF;
     padding:8px;
-    // background: rgba($color: #000000, $alpha: .5);
-    padding:60px;
+    height: 300px;
   }
   .footer-title{
     color:#4F5254;
@@ -190,6 +219,8 @@ ul{
   }
   .homepage-link{
     text-align: center;
-    color:#898A8E;
+    font-size: 18px;
+    font-family:PingFangSC-Light;
+    margin-top: 120px;
   }
 }

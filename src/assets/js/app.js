@@ -12,8 +12,9 @@ import line from './line';
 line();
 $(document).foundation();
 const resizeImage = () => {
+  const leftLen = $(window).width() > 1800 ? 0 : ($(window).width() - 1800) / 2
   $('.star-image')
-    .css('left', ($(window).width() - 1920) / 2)
+    .css('left', leftLen)
     .css('visibility', 'visible');
 }
 $(window).resize(() => {
