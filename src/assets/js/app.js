@@ -84,7 +84,7 @@ resizeImage();
 //   }
 // });
 
-const countdonwTime = "2018/06/20";
+const countdonwTime = "2018/06/20 12:00:00";
 
 const $html = ''
 + '<span><bold class="value"> %D </bold><bold class="label">D</bold></span><strong>:</strong>'
